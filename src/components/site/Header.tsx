@@ -45,17 +45,17 @@ export const Header = () => {
         scrolled ? "bg-background/85 shadow-card" : "bg-background/70"
       }`}
     >
-      <div className="container-page flex h-[60px] md:h-[72px] items-center justify-between gap-4">
+      <div className="container-page flex h-14 md:h-16 items-center justify-between gap-3">
         <Logo />
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-0.5">
           {NAV.map((n) => (
             <NavLink
               key={n.to}
               to={n.to}
               end={n.to === "/"}
               className={({ isActive }) =>
-                `px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                `px-2.5 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                   isActive ? "text-primary bg-primary-soft" : "text-foreground/80 hover:text-primary hover:bg-primary-soft/60"
                 }`
               }
@@ -67,7 +67,7 @@ export const Header = () => {
 
         <div className="flex items-center gap-2">
           <span
-            className={`hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${
+            className={`hidden xl:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${
               isOpen ? "bg-accent-soft text-accent" : "bg-muted text-muted-foreground"
             }`}
           >
@@ -75,8 +75,8 @@ export const Header = () => {
             {isOpen ? "Open Now" : "Opens at 9 AM"}
           </span>
 
-          <Button asChild className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-pill">
-            <Link to="/contact"><CalendarCheck className="mr-2 h-4 w-4" />Book Appointment</Link>
+          <Button asChild size="sm" className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg h-9 px-3 text-sm shadow-pill">
+            <Link to="/contact"><CalendarCheck className="mr-1.5 h-4 w-4" />Book Now</Link>
           </Button>
 
           <a
@@ -84,17 +84,17 @@ export const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
-            className="md:hidden grid h-10 w-10 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-pill"
+            className="md:hidden grid h-9 w-9 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-pill"
           >
-            <MessageCircle className="h-5 w-5" />
+            <MessageCircle className="h-4 w-4" />
           </a>
 
           <button
-            className="lg:hidden grid h-10 w-10 place-items-center rounded-xl border border-border"
+            className="lg:hidden grid h-9 w-9 place-items-center rounded-lg border border-border"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
         </div>
       </div>
