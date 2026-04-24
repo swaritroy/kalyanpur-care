@@ -1,8 +1,8 @@
 export const CLINIC = {
   name: "Shashi Medical Hall",
   tagline: "Your Family's Health, Our Priority",
-  doctor: "Dr. Aditya Singh Yadav",
-  doctorShort: "Dr. Aditya",
+  doctor: "Dr. Sambhu Yadav",
+  doctorShort: "Dr. Sambhu",
   owner: "Aditya Singh Yadav",
   ownerNote: "Son of Dr. Sambhu Yadav",
   phone: "+919798382817",

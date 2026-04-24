@@ -26,7 +26,7 @@ const trust = [
 ];
 
 const why = [
-  { icon: HeartPulse, title: "Expert Diagnosis", text: "Dr. Aditya leverages years of experience for accurate and timely diagnosis of your health concerns." },
+  { icon: HeartPulse, title: "Expert Diagnosis", text: "Dr. Sambhu Yadav leverages years of experience for accurate and timely diagnosis of your health concerns." },
   { icon: Stethoscope, title: "Compassionate Care", text: "We believe in listening to our patients. You are not just a number; you are part of our community." },
   { icon: Microscope, title: "Modern Facilities", text: "Our clinic in Kalyanpur is equipped with modern medical tools to provide you with the best possible care." },
   { icon: IndianRupee, title: "Affordable & Transparent", text: "High-quality healthcare at transparent prices, ensuring peace of mind for your family." },
