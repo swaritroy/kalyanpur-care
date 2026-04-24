@@ -15,7 +15,7 @@ const items: { src: string; alt: string; cat: Exclude<Cat, "All"> }[] = [
   { src: consultation, alt: "Doctor's consultation room", cat: "Clinic Interior" },
   { src: equipment, alt: "Medical equipment", cat: "Equipment" },
   { src: reception, alt: "Clinic reception", cat: "Our Team" },
-  { src: doctor, alt: "Dr. Aditya Singh Yadav", cat: "Our Team" },
+  { src: doctor, alt: "Dr. Sambhu Yadav", cat: "Our Team" },
   { src: exterior, alt: "Clinic exterior", cat: "Clinic Interior" },
 ];
 const cats: Cat[] = ["All", "Clinic Interior", "Our Team", "Equipment"];

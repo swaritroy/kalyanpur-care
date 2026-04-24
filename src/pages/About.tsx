@@ -25,6 +25,7 @@ const About = () => (
         <div>
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent bg-accent-soft px-3 py-1 rounded-full">About</span>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-bold text-balance">Meet {CLINIC.doctor} & The Team</h1>
+          <p className="mt-3 text-sm text-muted-foreground">Owned & managed by <span className="font-semibold text-foreground">{CLINIC.owner}</span> ({CLINIC.ownerNote})</p>
           <blockquote className="mt-6 border-l-4 border-accent pl-4">
             <p className="font-display italic text-xl text-foreground">
               "Our mission is simple: to provide the families of Kalyanpur with healthcare they can trust, year after year."
