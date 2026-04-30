@@ -20,15 +20,15 @@ const fadeUp = {
 };
 
 const trust = [
-  { icon: Award, text: "15+ Years of Experience" },
-  { icon: Users, text: "5,000+ Happy Patients" },
-  { icon: Star, text: "4.8/5 Google Rating" },
+  { icon: Award, text: "Trusted Local Practitioner" },
+  { icon: Users, text: "Allopathic • Ayurvedic • Vet" },
+  { icon: Star, text: "10% Discount on Medicines" },
 ];
 
 const why = [
-  { icon: HeartPulse, title: "Expert Diagnosis", text: "Dr. Sambhu Yadav leverages years of experience for accurate and timely diagnosis of your health concerns." },
+  { icon: HeartPulse, title: "Experienced Care", text: "Shambhu Kumar — a trusted Rural Medical Practitioner (ग्रामीण चिकित्सक) — provides reliable consultations for everyday health concerns." },
   { icon: Stethoscope, title: "Compassionate Care", text: "We believe in listening to our patients. You are not just a number; you are part of our community." },
-  { icon: Microscope, title: "Modern Facilities", text: "Our clinic in Kalyanpur is equipped with modern medical tools to provide you with the best possible care." },
+  { icon: Microscope, title: "Three Systems of Medicine", text: "Allopathic, Ayurvedic and Veterinary medicines available under one roof — with a 10% discount for our community." },
   { icon: IndianRupee, title: "Affordable & Transparent", text: "High-quality healthcare at transparent prices, ensuring peace of mind for your family." },
 ];
 
@@ -47,13 +47,13 @@ const Index = () => {
         <div className="container-page grid lg:grid-cols-2 gap-10 lg:gap-16 items-center py-12 md:py-20">
           <motion.div {...fadeUp}>
             <span className="inline-flex items-center gap-2 bg-accent-soft text-accent px-3 py-1 rounded-full text-xs font-semibold">
-              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" /> Trusted by 5,000+ families in Kalyanpur
+              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" /> Now Open in Chausima, Kalyanpur
             </span>
             <h1 className="mt-4 font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-[1.1] text-balance">
-              Trusted Medical Care for a <span className="text-primary">Healthier Kalyanpur</span>
+              Trusted Medical Care for <span className="text-primary">Every Family in Kalyanpur</span>
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-xl">
-              Welcome to {CLINIC.name}, where {CLINIC.doctor} and our team provide compassionate and expert healthcare for your entire family.
+              Welcome to {CLINIC.name} — Chausima, Kalyanpur. {CLINIC.doctor} (Rural Medical Practitioner) and Manager {CLINIC.owner} provide reliable consultations and a full pharmacy with allopathic, ayurvedic & veterinary medicines.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl h-12 px-6 shadow-pill">
@@ -69,7 +69,7 @@ const Index = () => {
             <div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-10 blur-2xl" />
             <img
               src={doctorHero}
-              alt={`${CLINIC.doctor} at ${CLINIC.name}`}
+              alt={`${CLINIC.doctor} — ${CLINIC.doctorTitle} at ${CLINIC.name}`}
               width={1024}
               height={1024}
               className="relative rounded-3xl shadow-card-hover object-cover w-full aspect-square"
@@ -79,8 +79,8 @@ const Index = () => {
                 <Star className="h-5 w-5 fill-accent" />
               </div>
               <div>
-                <div className="font-bold text-sm">4.8 / 5</div>
-                <div className="text-xs text-muted-foreground">Google Rating</div>
+                <div className="font-bold text-sm">10% Off</div>
+                <div className="text-xs text-muted-foreground">On all medicines</div>
               </div>
             </div>
           </motion.div>
@@ -146,7 +146,7 @@ const Index = () => {
         <div className="container-page max-w-4xl text-center">
           <Quote className="mx-auto h-10 w-10 text-primary-foreground/40" />
           <p className="mt-6 font-display italic text-2xl md:text-3xl leading-snug text-balance">
-            "{CLINIC.doctor.replace("Dr. ", "Dr. ")} is the most patient and understanding doctor in Kalyanpur. He took the time to listen to all my concerns and explained the treatment perfectly. Our whole family now trusts Shashi Medical Hall."
+            "Shambhu Kumar ji is patient and understanding. He took the time to listen to all my concerns and explained everything clearly. Our whole family now trusts {CLINIC.name} for medicines and consultations."
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
             <img src={patientPriya} alt="Priya Sharma" width={56} height={56} loading="lazy" className="h-14 w-14 rounded-full object-cover ring-4 ring-primary-foreground/20" />
