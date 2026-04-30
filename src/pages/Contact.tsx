@@ -63,7 +63,7 @@ const Contact = () => (
         <h2 className="font-display text-2xl md:text-3xl font-bold mb-6 text-center">Our Location in Kalyanpur</h2>
         <div className="rounded-3xl overflow-hidden shadow-card border border-border">
           <iframe
-            title="Shashi Medical Hall Map"
+            title="Trusted Medical Hall Map"
             src={CLINIC.mapsEmbed}
             className="w-full h-[420px] border-0"
             loading="lazy"

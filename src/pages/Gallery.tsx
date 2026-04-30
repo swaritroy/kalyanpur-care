@@ -15,7 +15,7 @@ const items: { src: string; alt: string; cat: Exclude<Cat, "All"> }[] = [
   { src: consultation, alt: "Doctor's consultation room", cat: "Clinic Interior" },
   { src: equipment, alt: "Medical equipment", cat: "Equipment" },
   { src: reception, alt: "Clinic reception", cat: "Our Team" },
-  { src: doctor, alt: "Dr. Sambhu Yadav", cat: "Our Team" },
+  { src: doctor, alt: "Shambhu Kumar — Rural Medical Practitioner", cat: "Our Team" },
   { src: exterior, alt: "Clinic exterior", cat: "Clinic Interior" },
 ];
 const cats: Cat[] = ["All", "Clinic Interior", "Our Team", "Equipment"];
@@ -27,7 +27,7 @@ const Gallery = () => {
 
   return (
     <SiteLayout>
-      <PageHero title="A Glimpse Inside Shashi Medical Hall"
+      <PageHero title="A Glimpse Inside Trusted Medical Hall"
         subtitle="Take a virtual tour of our clean, modern clinic in Kalyanpur." />
       <section className="section-y">
         <div className="container-page">

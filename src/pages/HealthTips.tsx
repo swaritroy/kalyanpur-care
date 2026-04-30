@@ -8,13 +8,13 @@ import hydration from "@/assets/blog-hydration.jpg";
 
 const posts = [
   { img: monsoon, tag: "Seasonal", title: "Staying Healthy During Monsoon in Kanpur: 5 Simple Tips", excerpt: "The monsoon brings relief from the heat, but also a rise in infections. Here's how to protect your family from common monsoon illnesses..." },
-  { img: diabetes, tag: "Chronic Care", title: "Managing Diabetes: Diet Tips for a North Indian Lifestyle", excerpt: "Living with diabetes doesn't mean giving up all your favourite foods. Dr. Sambhu shares practical tips for managing your diet..." },
+  { img: diabetes, tag: "Chronic Care", title: "Managing Diabetes: Diet Tips for a North Indian Lifestyle", excerpt: "Living with diabetes doesn't mean giving up all your favourite foods. Shambhu Kumar ji shares practical tips for managing your diet..." },
   { img: hydration, tag: "Child Care", title: "Is Your Child Getting Enough Water? Signs of Dehydration in Kids", excerpt: "With rising temperatures, dehydration is a serious risk for children. Learn to spot the early signs and keep your little ones safe..." },
 ];
 
 const HealthTips = () => (
   <SiteLayout>
-    <PageHero title="Health & Wellness Tips from Shashi Medical Hall"
+    <PageHero title="Health & Wellness Tips from Trusted Medical Hall"
       subtitle="Simple advice to help you and your family stay healthy in Kalyanpur." />
     <section className="section-y">
       <div className="container-page grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -33,7 +33,7 @@ const HealthTips = () => (
         ))}
       </div>
     </section>
-    <LeadPeWidget heading="Want Personalised Health Advice? Talk to Dr. Sambhu." />
+    <LeadPeWidget heading="Want Personalised Health Advice? Talk to Shambhu Kumar ji." />
   </SiteLayout>
 );
 export default HealthTips;

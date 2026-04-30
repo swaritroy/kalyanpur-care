@@ -4,12 +4,12 @@ import { PageHero } from "@/components/site/PageHero";
 import { LeadPeWidget } from "@/components/site/LeadPeWidget";
 
 const data = [
-  { rating: 5, quote: "Finally, a doctor in Kalyanpur who actually listens. Dr. Aditya was thorough and didn't rush the appointment. Highly recommended for family health.", name: "Rohan Gupta", loc: "Indira Nagar, Kalyanpur" },
+  { rating: 5, quote: "Finally, someone in Kalyanpur who actually listens. Shambhu Kumar ji was thorough and didn't rush the consultation. Highly recommended for family health.", name: "Rohan Gupta", loc: "Indira Nagar, Kalyanpur" },
   { rating: 5, quote: "I took my daughter for her vaccinations here. The process was so smooth and the clinic is very clean. The staff was great with my child.", name: "Anita Singh", loc: "Kalyanpur" },
   { rating: 4, quote: "Good experience for my father's regular BP check-up. The fees are reasonable and the location is very convenient.", name: "Mohammed Afzal", loc: "Keshavpuram" },
-  { rating: 5, quote: "Dr. Aditya correctly diagnosed my chronic acidity issue that two other doctors had missed. Forever grateful to Shashi Medical Hall.", name: "Sneha Pandey", loc: "Awas Vikas, Kalyanpur" },
+  { rating: 5, quote: "Shambhu Kumar ji correctly identified my chronic acidity issue that two other clinics had missed. Forever grateful to Trusted Medical Hall.", name: "Sneha Pandey", loc: "Awas Vikas, Kalyanpur" },
   { rating: 5, quote: "Very honest doctor. He didn't prescribe unnecessary tests or expensive medicines. Trustworthy clinic in our area.", name: "Vikram Yadav", loc: "Kalyanpur" },
-  { rating: 5, quote: "We are a family of 5 and we all visit Shashi Medical Hall. Convenient timings and the doctor knows our complete health history.", name: "Sushma Tripathi", loc: "Geeta Nagar, Kalyanpur" },
+  { rating: 5, quote: "We are a family of 5 and we all visit Trusted Medical Hall. Convenient timings, the 10% discount on medicines really helps, and they know our complete health history.", name: "Sushma Tripathi", loc: "Geeta Nagar, Kalyanpur" },
 ];
 
 const Testimonials = () => (
