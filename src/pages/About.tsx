@@ -25,12 +25,12 @@ const About = () => (
         <div>
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent bg-accent-soft px-3 py-1 rounded-full">About</span>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-bold text-balance">Meet {CLINIC.doctor} & The Team</h1>
-          <p className="mt-3 text-sm text-muted-foreground">Owned & managed by <span className="font-semibold text-foreground">{CLINIC.owner}</span> ({CLINIC.ownerNote})</p>
+          <p className="mt-3 text-sm text-muted-foreground">{CLINIC.doctorTitle} • Managed by <span className="font-semibold text-foreground">{CLINIC.owner}</span> ({CLINIC.ownerRole})</p>
           <blockquote className="mt-6 border-l-4 border-accent pl-4">
             <p className="font-display italic text-xl text-foreground">
-              "Our mission is simple: to provide the families of Kalyanpur with healthcare they can trust, year after year."
+              "Our mission is simple: to provide the families of Chausima and Kalyanpur with affordable, honest healthcare they can trust, every single day."
             </p>
-            <footer className="mt-2 text-sm text-muted-foreground">— {CLINIC.doctor}, Founder</footer>
+            <footer className="mt-2 text-sm text-muted-foreground">— {CLINIC.doctor}, Practitioner</footer>
           </blockquote>
         </div>
       </div>
@@ -39,21 +39,18 @@ const About = () => (
     <section className="section-y">
       <div className="container-page grid md:grid-cols-3 gap-8">
         <aside className="rounded-2xl bg-surface-alt p-6 shadow-card md:sticky md:top-24 h-fit">
-          <h3 className="font-display text-lg font-bold flex items-center gap-2"><GraduationCap className="h-5 w-5 text-primary" /> Qualifications</h3>
-          <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-            <li>M.B.B.S. — King George's Medical University, Lucknow</li>
-            <li>Diploma in Family Medicine</li>
-          </ul>
-          <h3 className="mt-5 font-display text-lg font-bold flex items-center gap-2"><BadgeCheck className="h-5 w-5 text-primary" /> Registration</h3>
-          <p className="mt-2 text-sm text-muted-foreground">Registered with the UP Medical Council, Reg. No: 98765</p>
-          <h3 className="mt-5 font-display text-lg font-bold flex items-center gap-2"><Briefcase className="h-5 w-5 text-primary" /> Experience</h3>
-          <p className="mt-2 text-sm text-muted-foreground">15+ Years in General Practice</p>
+          <h3 className="font-display text-lg font-bold flex items-center gap-2"><GraduationCap className="h-5 w-5 text-primary" /> Role</h3>
+          <p className="mt-2 text-sm text-muted-foreground">Rural Medical Practitioner (ग्रामीण चिकित्सक) — trained in primary healthcare for rural communities.</p>
+          <h3 className="mt-5 font-display text-lg font-bold flex items-center gap-2"><BadgeCheck className="h-5 w-5 text-primary" /> Pharmacy</h3>
+          <p className="mt-2 text-sm text-muted-foreground">Allopathic, Ayurvedic and Veterinary medicines available — with a flat 10% discount for our patients.</p>
+          <h3 className="mt-5 font-display text-lg font-bold flex items-center gap-2"><Briefcase className="h-5 w-5 text-primary" /> Contact</h3>
+          <p className="mt-2 text-sm text-muted-foreground">{CLINIC.doctor}: {CLINIC.doctorPhoneDisplay}<br/>{CLINIC.owner} (Manager): {CLINIC.phoneDisplay}</p>
         </aside>
         <div className="md:col-span-2">
-          <h2 className="font-display text-3xl font-bold">A Message from Our Founder</h2>
+          <h2 className="font-display text-3xl font-bold">A Message from {CLINIC.doctor}</h2>
           <div className="mt-4 space-y-4 text-foreground/90 leading-relaxed">
-            <p>Hello, I'm {CLINIC.doctor}. My journey into medicine was driven by a deep-seated desire to serve the community I grew up in. After completing my medical education and gaining valuable experience in various city hospitals, I returned to Kalyanpur with a vision to create a clinic that combines modern medical standards with the warmth and trust of a traditional family doctor.</p>
-            <p>At {CLINIC.name}, we don't just treat illnesses; we build relationships. We take the time to understand your lifestyle, your concerns, and your health goals.</p>
+            <p>Namaste, I am {CLINIC.doctor}. My journey into healthcare has been driven by a simple wish — to serve the people of Chausima and Kalyanpur with honest, affordable medical care, right in their own neighbourhood.</p>
+            <p>At {CLINIC.name}, we don't just hand out medicines. We listen to your concerns, explain the treatment in simple language, and follow up to make sure you recover well. Our pharmacy stocks allopathic, ayurvedic and veterinary medicines so families can find what they need without travelling far.</p>
             <p>My team and I are committed to being your dedicated partners in health. We look forward to welcoming you and your family.</p>
           </div>
         </div>

@@ -19,7 +19,7 @@ const services = [
 
 const steps = [
   { icon: Calendar, title: "Book an Appointment", text: "Easily book online, via WhatsApp, or by calling us directly." },
-  { icon: MessageSquare, title: "Consultation with Doctor", text: "Have a detailed and empathetic consultation with Dr. Sambhu Yadav." },
+  { icon: MessageSquare, title: "Consultation with Practitioner", text: "Have a detailed and empathetic consultation with Shambhu Kumar (Rural Medical Practitioner)." },
   { icon: TestTube, title: "Diagnosis & Treatment Plan", text: "Receive a clear diagnosis and a personalized treatment plan tailored to your needs." },
   { icon: Repeat, title: "Follow-up & Care", text: "We ensure proper follow-up to monitor your recovery and long-term well-being." },
 ];
